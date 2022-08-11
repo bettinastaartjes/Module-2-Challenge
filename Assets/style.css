@@ -63,7 +63,7 @@ p {
     font-size: 15px;
 }
 
-/* The text.. I think in the 'About, Work, Contact' sections but when i changed width to 1000px it looked normal..? */
+/* This is the size of the div that contains the about, work, contact sections, the width under content is the width of the div */
 .content {
     width: 75%;
     display: inline-block;
@@ -84,6 +84,7 @@ p {
     max-height: 200px;
 }
 
+/* But this changes the height of the div */
 .about, .work, .contact {
     margin-bottom: 20px;
     padding: 50px;
