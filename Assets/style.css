@@ -39,12 +39,26 @@
     margin-left: 25px;
 }
 
+/* This tells all a tags (a href tags) to be in white w no text decoration, in this case it makes the navigation bar icons white w no decoration */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
 
+/* This adjusts the "hero" aka the banner image underneath the header - mess with the height and width (I did width to cover the whole page) */
 .hero {
-    height: 800px;
-    width: 100px;
+    height: 200px;
+    width: 1500px;
     margin-bottom: 25px;
     background-image: url("./Images/plants.jpeg");
     background-size: cover;
     background-position: center;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+p {
+    font-size: 15px;
 }
