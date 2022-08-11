@@ -37,6 +37,7 @@
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
+    justify-content: center;
 }
 
 /* This tells all a tags (a href tags) to be in white w no text decoration, in this case it makes the navigation bar icons white w no decoration */
@@ -48,11 +49,22 @@ a {
 /* This adjusts the "hero" aka the banner image underneath the header - mess with the height and width (I did width to cover the whole page) */
 .hero {
     height: 200px;
-    width: 1300px;
+    width: 100%;
     margin-bottom: 25px;
     background-image: url("./Images/plants.jpeg");
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.heroe-text {
+    width: 100;
+    text-align: center;
 }
 
 body {
@@ -82,10 +94,6 @@ p {
 /* THIS MADE THE IMAGES IN THE SECTIONS SMALLER! */
 .about img, .work img, .runbuddyproject img, .horiseonproject img, .flower3 img {
     max-height: 200px;
-}
-
-.contact img {
-    max-height: 50px;
 }
 
 /* But this changes the height of the div */
@@ -130,13 +138,16 @@ p {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(19, 78, 43);
     color: white;
+    justify-content: center;
 }
+
 
 /* DIV ON THE RIGHT SECTION */
 
 /* This created the div with text inside on the right hand side, but switching to the left */
 .benefits {
     margin-left: 20px;
+    display: inline-block;
     padding: 20px;
     clear: both;
     float: right;
@@ -164,48 +175,3 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
-
-/* MEET THE TRAINERS START */
-.trainers {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .trainer {
-    margin: 20px;
-    flex: 1;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-  }
-  
-  .trainer img {
-    width: 100%;
-  }
-  
-  .trainer-bio {
-    padding: 25px;
-    line-height: 1.3;
-  }
-  
-  .trainer-bio h3 {
-    font-size: 28px;
-  }
-  
-  .trainer-bio h4 {
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-  
-  .trainer-bio p {
-    font-size: 17px;
-  }
-  /* TRAINER STYLES END */
-
-  
-  .trainer-bio h3, .trainer-bio h4 {
-    display: block;
-  }
