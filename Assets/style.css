@@ -1,0 +1,50 @@
+
+/* Not sure what this does */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* This gave style to the logo and put the logo and the nav elements in a div */
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #464646;
+    color: #ffffff;
+}
+/* This changes the display and font of the logo (Bettina Staartjes) */
+.header h1 {
+    display: inline-block;
+    font-size: 50px;
+}
+
+/* This aligns all the nav tabs in the header to the right of the header div */
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* This tells the tabs in the nav bar to not have bullets! */
+.header div ul {
+    list-style-type: none;
+}
+
+/* This tells the tabs in the nav bar to be more towards the left and have inline-block display..?*/
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+
+.hero {
+    height: 800px;
+    width: 100px;
+    margin-bottom: 25px;
+    background-image: url("./Images/plants.jpeg");
+    background-size: cover;
+    background-position: center;
+}
