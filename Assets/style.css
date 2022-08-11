@@ -10,8 +10,8 @@
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #464646;
-    color: #ffffff;
+    background-color: #dfdfcb;
+    color: #0c5e2a;
 }
 /* This changes the display and font of the logo (Bettina Staartjes) */
 .header h1 {
@@ -41,14 +41,14 @@
 
 /* This tells all a tags (a href tags) to be in white w no text decoration, in this case it makes the navigation bar icons white w no decoration */
 a {
-    color: #ffffff;
+    color: #636a54;
     text-decoration: none;
 }
 
 /* This adjusts the "hero" aka the banner image underneath the header - mess with the height and width (I did width to cover the whole page) */
 .hero {
     height: 200px;
-    width: 1500px;
+    width: 1300px;
     margin-bottom: 25px;
     background-image: url("./Images/plants.jpeg");
     background-size: cover;
@@ -61,4 +61,81 @@ body {
 
 p {
     font-size: 15px;
+}
+
+/* The text.. I think in the 'About, Work, Contact' sections but when i changed width to 1000px it looked normal..? */
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* THIS MADE THE IMAGES IN THE SECTIONS SMALLER! */
+.about img, .work img, .contact img {
+    max-height: 200px;
+}
+
+.about, .work, .contact {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(180, 8, 8);
+}
+
+
+
+
+/* DIV ON THE RIGHT SECTION */
+
+/* This created the div with text inside on the right hand side, but switching to the left */
+.benefits {
+    margin-left: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #41795c;
+}
+
+.testing {
+    margin-left: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 200px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: pink;
+}
+
+/*GROUPED BUT THIS JUST MADE ALL THE TEXT WHITE*/
+.benefit-lead, .benefit-brand, .benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/*GROUPED*/
+.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*GROUPED*/
+.benefit-lead img, .benefit-brand img, .benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
